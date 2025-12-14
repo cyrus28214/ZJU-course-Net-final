@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 模型文件（大文件，建议使用Git LFS或不上传）
+*.pkl
+*.pth
+*.pt
+*.h5
+
+# 数据集
+dataset/
+*.csv
+
+# 结果文件
+results/
+*.png
+*.jpg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 环境
+venv/
+env/
+.conda/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.log
+*.tmp
+
