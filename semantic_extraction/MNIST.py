@@ -10,6 +10,7 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import torch
 import random
+import numpy as np
 
 # 设置随机种子
 random.seed(42)
@@ -30,7 +31,6 @@ from torchvision.datasets import mnist
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 import pandas as pd
-import numpy as np
 import copy
 from torch import nn
 import scipy

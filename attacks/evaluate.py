@@ -208,6 +208,4 @@ def visualize_attack(clean_images, adv_images, labels, pred_clean, pred_adv, num
     if save_path:
         plt.savefig(save_path, dpi=150, bbox_inches='tight')
         print(f"Visualization saved to {save_path}")
-    
-    plt.show()
 

@@ -8,7 +8,6 @@ FGSM (Fast Gradient Sign Method) 对抗攻击
 import torch
 import torch.nn as nn
 
-
 def fgsm_attack(model, images, labels, epsilon=0.3, targeted=False, target_labels=None):
     """
     FGSM对抗攻击

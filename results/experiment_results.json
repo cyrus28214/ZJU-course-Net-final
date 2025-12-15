@@ -1,0 +1,456 @@
+{
+  "clean": {
+    "accuracy": 0.7099999785423279,
+    "num_samples": 100
+  },
+  "fgsm": [
+    {
+      "epsilon": 0.02,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.5699999928474426,
+        "attack_success_rate": 0.429999977350235,
+        "perturbation_l2_mean": 0.4237033724784851,
+        "perturbation_linf_max": 0.02000001072883606,
+        "psnr": 36.39596104677572,
+        "semantic_l2_distance": 0.0003425795909685966
+      }
+    },
+    {
+      "epsilon": 0.04,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.47999998927116394,
+        "attack_success_rate": 0.5199999809265137,
+        "perturbation_l2_mean": 0.8436292409896851,
+        "perturbation_linf_max": 0.04000002145767212,
+        "psnr": 30.414214496466208,
+        "semantic_l2_distance": 0.0006809664995242388
+      }
+    },
+    {
+      "epsilon": 0.06,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.3700000047683716,
+        "attack_success_rate": 0.6299999952316284,
+        "perturbation_l2_mean": 1.262337565422058,
+        "perturbation_linf_max": 0.06000000238418579,
+        "psnr": 26.913733964012604,
+        "semantic_l2_distance": 0.0010225654259706156
+      }
+    },
+    {
+      "epsilon": 0.08,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.28999999165534973,
+        "attack_success_rate": 0.7099999785423279,
+        "perturbation_l2_mean": 1.679713249206543,
+        "perturbation_linf_max": 0.08000001311302185,
+        "psnr": 24.432565444810407,
+        "semantic_l2_distance": 0.0013672084074753982
+      }
+    },
+    {
+      "epsilon": 0.1,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.14000000059604645,
+        "attack_success_rate": 0.85999995470047,
+        "perturbation_l2_mean": 2.0953187942504883,
+        "perturbation_linf_max": 0.10000002384185791,
+        "psnr": 22.51225762984204,
+        "semantic_l2_distance": 0.0017119729213225536
+      }
+    },
+    {
+      "epsilon": 0.12,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.09999999403953552,
+        "attack_success_rate": 0.8999999761581421,
+        "perturbation_l2_mean": 2.509728193283081,
+        "perturbation_linf_max": 0.12000000476837158,
+        "psnr": 20.944750116635436,
+        "semantic_l2_distance": 0.0020577303568522134
+      }
+    },
+    {
+      "epsilon": 0.14,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.05999999865889549,
+        "attack_success_rate": 0.9399999976158142,
+        "perturbation_l2_mean": 2.9229183197021484,
+        "perturbation_linf_max": 0.14000001549720764,
+        "psnr": 19.62097470679876,
+        "semantic_l2_distance": 0.0024031387231288814
+      }
+    },
+    {
+      "epsilon": 0.16,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.04999999701976776,
+        "attack_success_rate": 0.949999988079071,
+        "perturbation_l2_mean": 3.33510160446167,
+        "perturbation_linf_max": 0.1600000262260437,
+        "psnr": 18.47514387972304,
+        "semantic_l2_distance": 0.0027479105729323167
+      }
+    },
+    {
+      "epsilon": 0.18,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.04999999701976776,
+        "attack_success_rate": 0.949999988079071,
+        "perturbation_l2_mean": 3.746105909347534,
+        "perturbation_linf_max": 0.18000003695487976,
+        "psnr": 17.46573398630541,
+        "semantic_l2_distance": 0.003091404499151768
+      }
+    },
+    {
+      "epsilon": 0.2,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 4.156152248382568,
+        "perturbation_linf_max": 0.20000001788139343,
+        "psnr": 16.563513840515498,
+        "semantic_l2_distance": 0.003431965754582332
+      }
+    },
+    {
+      "epsilon": 0.22,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 4.565042495727539,
+        "perturbation_linf_max": 0.2200000286102295,
+        "psnr": 15.74842754411543,
+        "semantic_l2_distance": 0.003772272696861854
+      }
+    },
+    {
+      "epsilon": 0.24,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 4.972952365875244,
+        "perturbation_linf_max": 0.24000000953674316,
+        "psnr": 15.005024338148111,
+        "semantic_l2_distance": 0.0041105519808255706
+      }
+    },
+    {
+      "epsilon": 0.26,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 5.379737377166748,
+        "perturbation_linf_max": 0.2600000202655792,
+        "psnr": 14.322067208242428,
+        "semantic_l2_distance": 0.004446223332331731
+      }
+    },
+    {
+      "epsilon": 0.28,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.019999999552965164,
+        "attack_success_rate": 0.9799999594688416,
+        "perturbation_l2_mean": 5.785562038421631,
+        "perturbation_linf_max": 0.2800000309944153,
+        "psnr": 13.690356365494889,
+        "semantic_l2_distance": 0.004779216570731921
+      }
+    },
+    {
+      "epsilon": 0.3,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 6.190560340881348,
+        "perturbation_linf_max": 0.30000004172325134,
+        "psnr": 13.102653918602458,
+        "semantic_l2_distance": 0.005109559572660006
+      }
+    }
+  ],
+  "pgd": [
+    {
+      "epsilon": 0.02,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.5699999928474426,
+        "attack_success_rate": 0.429999977350235,
+        "perturbation_l2_mean": 0.4229556918144226,
+        "perturbation_linf_max": 0.02000001072883606,
+        "psnr": 36.41110843280585,
+        "semantic_l2_distance": 0.00034696548413007687
+      }
+    },
+    {
+      "epsilon": 0.04,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.4399999976158142,
+        "attack_success_rate": 0.5600000023841858,
+        "perturbation_l2_mean": 0.839219868183136,
+        "perturbation_linf_max": 0.04000002145767212,
+        "psnr": 30.45836196098798,
+        "semantic_l2_distance": 0.0006918802016820663
+      }
+    },
+    {
+      "epsilon": 0.06,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.28999999165534973,
+        "attack_success_rate": 0.7099999785423279,
+        "perturbation_l2_mean": 1.2476390600204468,
+        "perturbation_linf_max": 0.06000000238418579,
+        "psnr": 27.0129947371227,
+        "semantic_l2_distance": 0.0010382405305520083
+      }
+    },
+    {
+      "epsilon": 0.08,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.12999999523162842,
+        "attack_success_rate": 0.8700000047683716,
+        "perturbation_l2_mean": 1.6537622213363647,
+        "perturbation_linf_max": 0.08000001311302185,
+        "psnr": 24.564874830074007,
+        "semantic_l2_distance": 0.001376500618763459
+      }
+    },
+    {
+      "epsilon": 0.1,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.07999999821186066,
+        "attack_success_rate": 0.9199999570846558,
+        "perturbation_l2_mean": 2.0517959594726562,
+        "perturbation_linf_max": 0.10000002384185791,
+        "psnr": 22.691169526769443,
+        "semantic_l2_distance": 0.0017123667399088541
+      }
+    },
+    {
+      "epsilon": 0.12,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.05999999865889549,
+        "attack_success_rate": 0.9399999976158142,
+        "perturbation_l2_mean": 2.4365427494049072,
+        "perturbation_linf_max": 0.12000000476837158,
+        "psnr": 21.197960944205803,
+        "semantic_l2_distance": 0.002032203796582344
+      }
+    },
+    {
+      "epsilon": 0.14,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.04999999701976776,
+        "attack_success_rate": 0.949999988079071,
+        "perturbation_l2_mean": 2.8184335231781006,
+        "perturbation_linf_max": 0.14000001549720764,
+        "psnr": 19.933987802594253,
+        "semantic_l2_distance": 0.002361899644900591
+      }
+    },
+    {
+      "epsilon": 0.16,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 3.176409959793091,
+        "perturbation_linf_max": 0.1600000262260437,
+        "psnr": 18.894781828016246,
+        "semantic_l2_distance": 0.0026584671705197067
+      }
+    },
+    {
+      "epsilon": 0.18,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 3.547050714492798,
+        "perturbation_linf_max": 0.18000003695487976,
+        "psnr": 17.93500932479844,
+        "semantic_l2_distance": 0.0029755743955954526
+      }
+    },
+    {
+      "epsilon": 0.2,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.029999999329447746,
+        "attack_success_rate": 0.9699999690055847,
+        "perturbation_l2_mean": 3.8951308727264404,
+        "perturbation_linf_max": 0.20000001788139343,
+        "psnr": 17.121666896697377,
+        "semantic_l2_distance": 0.0032687852321526944
+      }
+    },
+    {
+      "epsilon": 0.22,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.019999999552965164,
+        "attack_success_rate": 0.9799999594688416,
+        "perturbation_l2_mean": 4.234057426452637,
+        "perturbation_linf_max": 0.2200000286102295,
+        "psnr": 16.396932830190558,
+        "semantic_l2_distance": 0.00355685307429387
+      }
+    },
+    {
+      "epsilon": 0.24,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.009999999776482582,
+        "attack_success_rate": 0.9899999499320984,
+        "perturbation_l2_mean": 4.569213390350342,
+        "perturbation_linf_max": 0.24000000953674316,
+        "psnr": 15.73533709714988,
+        "semantic_l2_distance": 0.003852992669129983
+      }
+    },
+    {
+      "epsilon": 0.26,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.009999999776482582,
+        "attack_success_rate": 0.9899999499320984,
+        "perturbation_l2_mean": 4.896181583404541,
+        "perturbation_linf_max": 0.2600000202655792,
+        "psnr": 15.135068836535524,
+        "semantic_l2_distance": 0.004140545771672176
+      }
+    },
+    {
+      "epsilon": 0.28,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.009999999776482582,
+        "attack_success_rate": 0.9899999499320984,
+        "perturbation_l2_mean": 5.188153266906738,
+        "perturbation_linf_max": 0.2800000309944153,
+        "psnr": 14.631166379677879,
+        "semantic_l2_distance": 0.004383630997095353
+      }
+    },
+    {
+      "epsilon": 0.3,
+      "alpha": 0.01,
+      "num_iter": 40,
+      "metrics": {
+        "clean_accuracy": 0.7099999785423279,
+        "adversarial_accuracy": 0.009999999776482582,
+        "attack_success_rate": 0.9899999499320984,
+        "perturbation_l2_mean": 5.49501895904541,
+        "perturbation_linf_max": 0.30000004172325134,
+        "psnr": 14.133110378894367,
+        "semantic_l2_distance": 0.004687968523074419
+      }
+    }
+  ],
+  "e2e": {
+    "epsilon": 0.3,
+    "alpha": 0.01,
+    "num_iter": 40,
+    "metrics": {
+      "clean_accuracy": 0.7099999785423279,
+      "adversarial_accuracy": 0.08999999612569809,
+      "attack_success_rate": 0.9099999666213989,
+      "perturbation_l2_mean": 4.85505485534668,
+      "perturbation_linf_max": 0.30000004172325134,
+      "psnr": 14.80765645545548,
+      "semantic_l2_distance": 0.004410031147492237
+    },
+    "history": [
+      0.3700000047683716,
+      0.429999977350235,
+      0.4699999988079071,
+      0.5299999713897705,
+      0.5899999737739563,
+      0.6800000071525574,
+      0.7699999809265137,
+      0.8199999928474426,
+      0.85999995470047,
+      0.8799999952316284,
+      0.8899999856948853,
+      0.8999999761581421,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989,
+      0.9099999666213989
+    ]
+  }
+}

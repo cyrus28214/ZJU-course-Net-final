@@ -15,11 +15,6 @@ __pycache__/
 dataset/
 *.csv
 
-# 结果文件
-results/
-*.png
-*.jpg
-
 # IDE
 .vscode/
 .idea/
@@ -39,3 +34,6 @@ Thumbs.db
 *.log
 *.tmp
 
+# pixi environments
+.pixi/*
+!.pixi/config.toml
