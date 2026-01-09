@@ -185,7 +185,7 @@ for rate in range(3):
 
     print('Training Start')
     print('Compression Rate:', compression_rate)
-    epoch_len = 150
+    epoch_len = 10
     out = None
     for e in range(epoch_len):
         torch.cuda.empty_cache()

@@ -1,0 +1,28 @@
+graph LR
+    %% 定义发送端
+    subgraph Transmitter [发送端]
+        direction TB
+        A[原始图像<br/>28 &times; 28] --> B(编码器<br/>784 &rarr; 78)
+    end
+
+    %% 定义信道
+    subgraph Wireless_Channel [信道]
+        C{加性高斯白噪声<br/>SNR=10dB}
+    end
+
+    %% 定义接收端
+    subgraph Receiver [接收端]
+        direction TB
+        D(解码器<br/>78 &rarr; 784) --> E[分类器<br/>10类输出]
+    end
+
+    %% 连接各部分
+    B -->|语义特征| C
+    C -->|受损特征| D
+
+    %% 样式美化
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#fff4dd,stroke:#d4a017,stroke-dasharray: 5 5
+    style Transmitter fill:#e1f5fe,stroke:#01579b
+    style Receiver fill:#e8f5e9,stroke:#1b5e20

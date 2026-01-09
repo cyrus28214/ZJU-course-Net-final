@@ -154,7 +154,7 @@ class AttackExperiment:
         
         return adv_images_e2e
     
-    def visualize_results(self, images, labels, adv_images_fgsm, adv_images_pgd, output_dir):
+    def visualize_results(self, images, labels, adv_images_fgsm, adv_images_pgd, adv_images_e2e, output_dir):
         """可视化攻击结果"""
         logging.info("\n5. Generating Visualizations...")
         output_dir = Path(output_dir)
@@ -194,6 +194,24 @@ class AttackExperiment:
                 pred_adv.cpu(),
                 num_samples=5,
                 save_path=str(output_dir / 'attack_results_pgd.png')
+            )
+
+        # 可视化End-to-End攻击
+        if adv_images_e2e is not None:
+            with torch.no_grad():
+                semantic = self.encoder(adv_images_e2e[:5])
+                reconstructed = self.decoder(semantic)
+                pred_clean = self.classifier(self.decoder(self.encoder(images[:5]))).argmax(dim=1)
+                pred_adv = self.classifier(reconstructed).argmax(dim=1)
+            
+            visualize_attack(
+                images[:5].view(-1, 1, 28, 28),
+                adv_images_e2e[:5].view(-1, 1, 28, 28),
+                labels[:5].cpu(),
+                pred_clean.cpu(),
+                pred_adv.cpu(),
+                num_samples=5,
+                save_path=str(output_dir / 'attack_results_e2e.png')
             )
     
     def save_results(self, output_path):

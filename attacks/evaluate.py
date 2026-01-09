@@ -197,10 +197,10 @@ def visualize_attack(clean_images, adv_images, labels, pred_clean, pred_adv, num
         axes[1, i].set_title(f'Adversarial\nTrue: {labels[i]}, Pred: {pred_adv[i]}')
         axes[1, i].axis('off')
         
-        # 扰动（放大显示）
-        perturbation = (adv_img - clean_img) * 10  # 放大10倍以便可视化
+        # 扰动
+        perturbation = (adv_img - clean_img)
         axes[2, i].imshow(perturbation, cmap='RdBu', vmin=-0.5, vmax=0.5)
-        axes[2, i].set_title('Perturbation (×10)')
+        axes[2, i].set_title('Perturbation')
         axes[2, i].axis('off')
     
     plt.tight_layout()

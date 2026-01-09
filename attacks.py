@@ -184,7 +184,7 @@ def main():
     # 5. 可视化结果
     experiment.visualize_results(
         images, labels,
-        adv_images_fgsm, adv_images_pgd,
+        adv_images_fgsm, adv_images_pgd, adv_images_e2e,
         args.output_dir
     )
     

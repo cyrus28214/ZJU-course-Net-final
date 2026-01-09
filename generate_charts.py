@@ -132,13 +132,23 @@ def plot_psnr_tradeoff(results, output_path):
                          label='PGD', alpha=0.8)
     
     # 添加epsilon标签
-    for i, eps in enumerate(fgsm_eps):
-        ax.annotate(f'ε={eps}', (fgsm_psnr[i], fgsm_success[i]), 
-                   xytext=(5, 5), textcoords='offset points', fontsize=9)
+    points_to_label = [0.02, 0.05, 0.1, 0.2, 0.3]
     
+    # FGSM 标签 (下方)
+    for i, eps in enumerate(fgsm_eps):
+        if any(abs(eps - k) < 1e-5 for k in points_to_label):
+            ax.annotate(f'ε={eps}', (fgsm_psnr[i], fgsm_success[i]), 
+                       xytext=(0, -20), textcoords='offset points', 
+                       fontsize=10, ha='center', va='top',
+                       bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", alpha=0.6))
+    
+    # PGD 标签 (上方)
     for i, eps in enumerate(pgd_eps):
-        ax.annotate(f'ε={eps}', (pgd_psnr[i], pgd_success[i]), 
-                   xytext=(5, -15), textcoords='offset points', fontsize=9)
+        if any(abs(eps - k) < 1e-5 for k in points_to_label):
+            ax.annotate(f'ε={eps}', (pgd_psnr[i], pgd_success[i]), 
+                       xytext=(0, 20), textcoords='offset points', 
+                       fontsize=10, ha='center', va='bottom',
+                       bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", alpha=0.6))
     
     # End-to-End点
     if results['e2e']:
@@ -151,7 +161,7 @@ def plot_psnr_tradeoff(results, output_path):
                    xytext=(5, 5), textcoords='offset points', fontsize=10, fontweight='bold')
     
     ax.set_xlabel('PSNR (dB) - Higher is Better', fontsize=12, fontweight='bold')
-    ax.set_ylabel('Attack Success Rate (%) - Higher is Worse', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Attack Success Rate (%) - Higher is Better', fontsize=12, fontweight='bold')
     ax.set_title('Attack-Stealth Tradeoff: PSNR vs Success Rate', fontsize=14, fontweight='bold')
     ax.legend(fontsize=11, loc='best')
     ax.grid(alpha=0.3, linestyle='--')
@@ -208,21 +218,22 @@ def plot_perturbation_comparison(results, output_path):
     print(f"Saved: {output_path}")
 
 
-def generate_all_charts(json_path, output_dir):
+def generate_all_charts(json_path, output_dir_ignored):
     """生成所有图表"""
     print("Loading experiment results...")
     results = load_results(json_path)
     
-    output_dir = Path(output_dir)
+    # 只输出到 results 目录
+    output_dir = Path('results')
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    print("\nGenerating charts...")
+    print(f"\nGenerating charts in {output_dir}...")
     plot_attack_comparison(results, output_dir / 'attack_comparison.png')
     plot_epsilon_curves(results, output_dir / 'epsilon_curves.png')
     plot_psnr_tradeoff(results, output_dir / 'psnr_tradeoff.png')
     plot_perturbation_comparison(results, output_dir / 'perturbation_comparison.png')
     
-    print(f"\nAll charts saved to {output_dir}")
+    print(f"All charts saved to {output_dir}")
 
 
 def main():

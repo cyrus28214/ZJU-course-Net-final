@@ -11,7 +11,7 @@ import torch.nn as nn
 
 def end_to_end_attack(encoder, decoder, classifier, images, labels, 
                       epsilon=0.3, alpha=0.01, num_iter=40,
-                      lambda_recon=0.5, lambda_class=1.0):
+                      lambda_recon=0.01, lambda_class=1.0):
     """
     端到端对抗攻击
     优化目标：误导分类 + 保持图像相似度
