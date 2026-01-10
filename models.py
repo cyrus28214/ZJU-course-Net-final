@@ -3,6 +3,7 @@
 """
 Neural Network Models for Semantic Communication System
 包含分类器、编码器-解码器和端到端系统模型
+这里将 Semantic Communication System 中使用到的模型单独提取出来作为模块，定义与训练时一致
 """
 
 import torch
